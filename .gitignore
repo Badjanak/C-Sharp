@@ -234,3 +234,6 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/2. Simple Calculations
+/3. Simple Conditional Statements
+/4. Complex Conditional Statements
