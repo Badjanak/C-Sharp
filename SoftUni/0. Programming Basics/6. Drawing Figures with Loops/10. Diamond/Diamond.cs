@@ -10,14 +10,7 @@ class Diamond
         char wall = '*';
         char space = '-';
         StringBuilder diamond = new StringBuilder();
-
-        int top = 1;
-        bool isEven = n % 2 == 0;
-        if (isEven)
-        {
-            top = 2;
-        }
-
-
+        
+        Console.WriteLine(diamond);
     }
 }
