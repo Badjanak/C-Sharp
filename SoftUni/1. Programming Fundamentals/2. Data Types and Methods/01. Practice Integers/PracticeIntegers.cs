@@ -12,7 +12,6 @@ class PracticeIntegers
         int sixth = -1141583228;
         long seventh = -1223372036854775808;
 
-        Console.WriteLine("{0}\n{1}\n{2}\n{3}\n{4}\n{5}\n{6}",
-            first, second, third, fourth, fifth, sixth, seventh);
+        Console.WriteLine("{0}\n{1}\n{2}\n{3}\n{4}\n{5}\n{6}", first, second, third, fourth, fifth, sixth, seventh);
     }
 }
