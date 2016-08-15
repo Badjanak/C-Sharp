@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Money", "1. Money\1. Mon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Harvest", "2. Harvest\2. Harvest.csproj", "{A1338292-7673-4E60-A03D-0BB8D4878F93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Match Tickets", "3. Match Tickets\3. Match Tickets.csproj", "{08B873C0-0CE3-4315-B200-5E229F45208C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Back To The Past", "4. Back To The Past\4. Back To The Past.csproj", "{F449B135-86A5-4A96-85D1-26B99EB6B1A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A1338292-7673-4E60-A03D-0BB8D4878F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1338292-7673-4E60-A03D-0BB8D4878F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1338292-7673-4E60-A03D-0BB8D4878F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08B873C0-0CE3-4315-B200-5E229F45208C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B873C0-0CE3-4315-B200-5E229F45208C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B873C0-0CE3-4315-B200-5E229F45208C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B873C0-0CE3-4315-B200-5E229F45208C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F449B135-86A5-4A96-85D1-26B99EB6B1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F449B135-86A5-4A96-85D1-26B99EB6B1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F449B135-86A5-4A96-85D1-26B99EB6B1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F449B135-86A5-4A96-85D1-26B99EB6B1A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

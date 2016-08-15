@@ -4,20 +4,23 @@ class Harvest
 {
     static void Main()
     {
-        int vineYardArea = int.Parse(Console.ReadLine());
-        double vine = double.Parse(Console.ReadLine());
-        int wineNeeded = int.Parse(Console.ReadLine());
+        double vineYardArea = double.Parse(Console.ReadLine());
+        double vinesPerSqMeter = double.Parse(Console.ReadLine());
+        double wineNeeded = double.Parse(Console.ReadLine());
         int workers = int.Parse(Console.ReadLine());
 
-        double wineProduced = vineYardArea * 40 / 100 * vine / 2.5;
-        if (wineProduced >= wineNeeded)
+        double wineProduced = vineYardArea * 0.4 * vinesPerSqMeter / 2.5;
+        double wineLeft = wineProduced - wineNeeded;
+
+        if (wineLeft >= 0)
         {
+
             Console.WriteLine($"Good harvest this year! Total wine: {Math.Floor(wineProduced)} liters.");
-            Console.WriteLine($"{(int)wineProduced - (int)wineNeeded} liters left -> {Math.Ceiling((wineProduced - wineNeeded) / workers)} liters per person.");
+            Console.WriteLine($"{Math.Ceiling(wineLeft)} liters left -> {Math.Ceiling(wineLeft / workers)} liters per person.");
         }
         else
         {
-            Console.WriteLine($"It will be a tough winter! More {Math.Floor(wineNeeded - wineProduced)} liters wine needed.");
+            Console.WriteLine($"It will be a tough winter! More {Math.Floor(-wineLeft)} liters wine needed.");
         }
     }
 }
