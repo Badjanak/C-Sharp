@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Quotes in Strings", "07. Quotes in Strings\07. Quotes in Strings.csproj", "{62DFC2AA-98AF-4A97-B714-4AFDA26452F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. Comparing Floats", "13. Comparing Floats\13. Comparing Floats.csproj", "{AA6EDB62-9D5E-4AB4-82CC-7E318F62BCCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Print the ASCII Table", "14. Print the ASCII Table\14. Print the ASCII Table.csproj", "{C38F026F-2292-414A-BCB4-90D2CE6CC2F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62DFC2AA-98AF-4A97-B714-4AFDA26452F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62DFC2AA-98AF-4A97-B714-4AFDA26452F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62DFC2AA-98AF-4A97-B714-4AFDA26452F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62DFC2AA-98AF-4A97-B714-4AFDA26452F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA6EDB62-9D5E-4AB4-82CC-7E318F62BCCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6EDB62-9D5E-4AB4-82CC-7E318F62BCCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6EDB62-9D5E-4AB4-82CC-7E318F62BCCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6EDB62-9D5E-4AB4-82CC-7E318F62BCCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38F026F-2292-414A-BCB4-90D2CE6CC2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38F026F-2292-414A-BCB4-90D2CE6CC2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38F026F-2292-414A-BCB4-90D2CE6CC2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38F026F-2292-414A-BCB4-90D2CE6CC2F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
