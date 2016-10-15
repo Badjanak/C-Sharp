@@ -1,6 +1,6 @@
 ﻿/*
- Write a program that prints the numbers 1, 101 and 1001, each on a separate line. 
- */
+Write a program that prints the numbers 1, 101 and 1001, each on a separate line.
+*/
 
 using System;
 
