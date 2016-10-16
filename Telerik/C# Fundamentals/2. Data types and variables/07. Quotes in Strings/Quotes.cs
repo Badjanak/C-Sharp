@@ -9,9 +9,9 @@ class Quotes
     static void Main()
     {
         string escaped = "The \"use\" of quotations causes difficulties.";
-        string quoted = @"The ""use"" of quotations causes difficulties.";
+        Console.WriteLine("{0}", escaped);
 
-        Console.WriteLine($"{escaped}");
-        // Console.WriteLine($"{quoted}");
+        // string quoted = @"The ""use"" of quotations causes difficulties.";
+        // Console.WriteLine("{0}", quoted);
     }
 }
