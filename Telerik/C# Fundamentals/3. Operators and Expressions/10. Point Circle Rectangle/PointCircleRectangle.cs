@@ -16,7 +16,7 @@ class PointCircleRectangle
         double y = double.Parse(Console.ReadLine());
 
         bool isInCircle = (Math.Sqrt(((x - 1) * (x - 1)) + ((y - 1) * (y - 1))) <= raduis);
-        bool isOutRectangle = (-1 < x) ^ (x > 5) ^ (-1 < y) ^ (y > 1);
+        bool isOutRectangle = (-1 < x) ^ (x > 5) ^ (-1 <= y) ^ (y > 1);
 
         Console.WriteLine("{0} {1}", isInCircle ? "inside circle" : "outside circle", isOutRectangle ? "outside rectangle" : "inside rectangle");
     }

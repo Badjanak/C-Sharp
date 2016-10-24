@@ -13,11 +13,11 @@ class ModifyBit
 {
     static void Main()
     {
-        uint n = uint.Parse(Console.ReadLine());
+        ulong n = ulong.Parse(Console.ReadLine());
         byte p = byte.Parse(Console.ReadLine());
         byte v = byte.Parse(Console.ReadLine());
 
-        uint mask = 1u << p;
+        ulong mask = 1uL << p;
 
         if (v == 0)
         {

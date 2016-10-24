@@ -8,10 +8,10 @@ class NthBit
 {
     static void Main()
     {
-        uint number = uint.Parse(Console.ReadLine());
+        long number = long.Parse(Console.ReadLine());
 
-        byte position = byte .Parse(Console.ReadLine());
-        uint bitChecker = 1u << position;
+        int position = int.Parse(Console.ReadLine());
+        long bitChecker = 1L << position;
 
         Console.WriteLine((number & bitChecker) == bitChecker ? "1" : "0");
     }

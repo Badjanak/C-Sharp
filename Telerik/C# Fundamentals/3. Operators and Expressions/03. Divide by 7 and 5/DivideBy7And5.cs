@@ -15,13 +15,6 @@ class DivideBy7And5
         int number = int.Parse(Console.ReadLine());
         bool isDivisible = number % 35 == 0;
 
-        if (isDivisible)
-        {
-            Console.WriteLine("true {0}", number);
-        }
-        else
-        {
-            Console.WriteLine("false {0}", number);
-        }
+        Console.WriteLine(isDivisible ? "true {0}" : "false {0}", number);
     }
 }

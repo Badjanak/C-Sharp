@@ -18,7 +18,8 @@ class PointInCircle
         double y = double.Parse(Console.ReadLine());
 
         double point = Math.Sqrt((x * x) + (y * y));
+        bool isInCircle = point <= raduis;
 
-        Console.WriteLine(point <= raduis ? "yes {0:f2}" : "no {0:f2}", point);
+        Console.WriteLine(isInCircle ? "yes {0:f2}" : "no {0:f2}", point);
     }
 }
