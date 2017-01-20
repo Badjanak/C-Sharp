@@ -4,10 +4,10 @@ class RectangleArea
 {
     static void Main()
     {
-        decimal a = decimal.Parse(Console.ReadLine());
-        decimal b = decimal.Parse(Console.ReadLine());
+        double a = double.Parse(Console.ReadLine());
+        double b = double.Parse(Console.ReadLine());
 
-        decimal area = a * b;
+        double area = a * b;
         Console.WriteLine(area);
     }
 }

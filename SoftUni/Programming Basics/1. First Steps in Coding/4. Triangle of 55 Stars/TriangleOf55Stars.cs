@@ -9,7 +9,7 @@ class TriangleOf55Stars
 
         for (int row = 1; row <= rows; row++)
         {
-            Console.Write(new string('*', row));
+            Console.WriteLine(new string('*', row));
             starsCount += rows;
         }
         // Console.WriteLine(starsCount);
