@@ -52,6 +52,6 @@ class CurrencyConverter
                 break;
         }
 
-        Console.WriteLine("{0:0.##}", money);
+        Console.WriteLine($"{money:0.##}");
     }
 }

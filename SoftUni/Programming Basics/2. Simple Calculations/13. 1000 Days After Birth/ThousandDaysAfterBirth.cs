@@ -11,6 +11,7 @@ class ThousandDaysAfterBirth
 
         DateTime birthDate = DateTime.ParseExact(input, dateFormat, culture);
 
-        Console.WriteLine("{0:dd-MM-yyyy}", birthDate.AddDays(999));
+        DateTime afterThousandDays = birthDate.AddDays(999);
+        Console.WriteLine($"{afterThousandDays:dd-MM-yyyy}");
     }
 }

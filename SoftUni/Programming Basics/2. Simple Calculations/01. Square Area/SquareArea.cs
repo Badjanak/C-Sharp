@@ -4,9 +4,9 @@ class SquareArea
 {
     static void Main()
     {
-        decimal squareSide = decimal.Parse(Console.ReadLine());
-        decimal squareArea = squareSide * squareSide;
+        double squareSide = double.Parse(Console.ReadLine());
 
+        double squareArea = squareSide * squareSide;
         Console.WriteLine(squareArea);
     }
 }

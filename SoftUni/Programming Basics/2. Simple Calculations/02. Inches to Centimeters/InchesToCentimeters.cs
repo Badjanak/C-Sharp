@@ -4,9 +4,9 @@ class InchesToCentimeters
 {
     static void Main()
     {
-        decimal inches = decimal.Parse(Console.ReadLine());
-        decimal centimeters = inches * 2.54m;
+        double inches = double.Parse(Console.ReadLine());
 
+        double centimeters = inches * 2.54;
         Console.WriteLine(centimeters);
     }
 }

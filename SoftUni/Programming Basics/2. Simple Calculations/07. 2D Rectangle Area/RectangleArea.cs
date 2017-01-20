@@ -14,6 +14,6 @@ class RectangleArea
         decimal perimeter = (a + b) * 2m;
         decimal area = a * b;
 
-        Console.WriteLine("{0}\n{1}", area, perimeter);
+        Console.WriteLine($"{area}\n{perimeter}");
     }
 }

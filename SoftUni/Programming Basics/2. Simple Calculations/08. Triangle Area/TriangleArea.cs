@@ -4,10 +4,10 @@ class TriangleArea
 {
     static void Main()
     {
-        decimal a = decimal.Parse(Console.ReadLine());
-        decimal h = decimal.Parse(Console.ReadLine());
+        double a = double.Parse(Console.ReadLine());
+        double h = double.Parse(Console.ReadLine());
 
-        decimal area = a * h / 2m;
-        Console.WriteLine("{0:0.00}", area);
+        double area = a * h / 2;
+        Console.WriteLine($"{area:0.00}");
     }
 }

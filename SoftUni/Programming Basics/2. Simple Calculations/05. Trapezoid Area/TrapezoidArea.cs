@@ -4,11 +4,11 @@ class TrapezoidArea
 {
     static void Main()
     {
-        decimal a = decimal.Parse(Console.ReadLine());
-        decimal b = decimal.Parse(Console.ReadLine());
-        decimal h = decimal.Parse(Console.ReadLine());
+        double a = double.Parse(Console.ReadLine());
+        double b = double.Parse(Console.ReadLine());
+        double h = double.Parse(Console.ReadLine());
 
-        decimal area = (a + b) * h / 2m;
+        double area = (a + b) * h / 2;
         Console.WriteLine(area);
     }
 }

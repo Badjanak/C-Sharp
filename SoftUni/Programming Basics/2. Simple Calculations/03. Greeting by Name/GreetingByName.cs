@@ -6,6 +6,6 @@ class GreetingByName
     {
         string name = Console.ReadLine();
 
-        Console.WriteLine("Hello, {0}!", name);
+        Console.WriteLine($"Hello, {name}!");
     }
 }

@@ -4,9 +4,9 @@ class RadiansToDegrees
 {
     static void Main()
     {
-        decimal radians = decimal.Parse(Console.ReadLine());
+        double radians = double.Parse(Console.ReadLine());
 
-        decimal degrees = radians * 180 / (decimal)Math.PI;
+        double degrees = radians * 180 / Math.PI;
         int result = (int)degrees;
         Console.WriteLine(result);
     }
