@@ -6,12 +6,16 @@ class FruitOrVegetable
     {
         string product = Console.ReadLine().ToLower();
 
-        bool isFruit = product.Equals("banana") || product.Equals("apple") ||
-            product.Equals("kiwi") || product.Equals("cherry") ||
-            product.Equals("lemon") || product.Equals("grapes");
-
-        bool isVegetable = product.Equals("tomato") || product.Equals("cucumber") ||
-            product.Equals("pepper") || product.Equals("carrot");
+        bool isFruit = product.Equals("banana")
+            || product.Equals("apple")
+            || product.Equals("kiwi")
+            || product.Equals("cherry")
+            || product.Equals("lemon")
+            || product.Equals("grapes");
+        bool isVegetable = product.Equals("tomato")
+            || product.Equals("cucumber")
+            || product.Equals("pepper")
+            || product.Equals("carrot");
 
         if (isFruit || isVegetable)
         {

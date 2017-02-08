@@ -4,12 +4,12 @@ class PointInRectangle
 {
     static void Main()
     {
-        decimal x1 = decimal.Parse(Console.ReadLine());
-        decimal y1 = decimal.Parse(Console.ReadLine());
-        decimal x2 = decimal.Parse(Console.ReadLine());
-        decimal y2 = decimal.Parse(Console.ReadLine());
-        decimal x = decimal.Parse(Console.ReadLine());
-        decimal y = decimal.Parse(Console.ReadLine());
+        double x1 = double.Parse(Console.ReadLine());
+        double y1 = double.Parse(Console.ReadLine());
+        double x2 = double.Parse(Console.ReadLine());
+        double y2 = double.Parse(Console.ReadLine());
+        double x = double.Parse(Console.ReadLine());
+        double y = double.Parse(Console.ReadLine());
 
         bool isInsideRectangle = (x1 <= x && x <= x2) && (y1 <= y && y <= y2);
         if (isInsideRectangle)

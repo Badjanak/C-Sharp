@@ -4,15 +4,16 @@ class PointOnRectangleBorder
 {
     static void Main()
     {
-        decimal x1 = decimal.Parse(Console.ReadLine());
-        decimal y1 = decimal.Parse(Console.ReadLine());
-        decimal x2 = decimal.Parse(Console.ReadLine());
-        decimal y2 = decimal.Parse(Console.ReadLine());
-        decimal x = decimal.Parse(Console.ReadLine());
-        decimal y = decimal.Parse(Console.ReadLine());
+        double x1 = double.Parse(Console.ReadLine());
+        double y1 = double.Parse(Console.ReadLine());
+        double x2 = double.Parse(Console.ReadLine());
+        double y2 = double.Parse(Console.ReadLine());
+        double x = double.Parse(Console.ReadLine());
+        double y = double.Parse(Console.ReadLine());
 
-        bool isOnBorder = ((x == x1 || x == x2) && (y1 <= y && y <= y2)) ||
-            ((y == y1 || y == y2) && (x1 <= x && x <= x2));
+        bool isLyingOnX = (x == x1 || x == x2) && (y1 <= y && y <= y2);
+        bool isLyingOnY = (y == y1 || y == y2) && (x1 <= x && x <= x2);
+        bool isOnBorder = isLyingOnX || isLyingOnY;
 
         if (isOnBorder)
         {

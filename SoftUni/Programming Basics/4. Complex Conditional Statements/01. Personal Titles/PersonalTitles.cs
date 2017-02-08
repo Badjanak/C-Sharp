@@ -4,17 +4,25 @@ class PersonalTitles
 {
     static void Main()
     {
-        decimal age = decimal.Parse(Console.ReadLine());
-        string sex = Console.ReadLine();
-        bool isAdult = age >= 16;
+        string name = Console.ReadLine();
+        int age = int.Parse(Console.ReadLine());
+        string gender = Console.ReadLine();
 
-        if (sex.Equals("f"))
+        bool isFemale = gender.Equals("f");
+        bool isMale = gender.Equals("m");
+        bool isAdult = age >= 16;
+        string greeting = "";
+        if (isFemale)
         {
-            Console.WriteLine("{0}", isAdult ? "Ms." : "Miss");
+            greeting = isAdult
+                ? "Ms."
+                : "Miss";
         }
-        else if (sex.Equals("m"))
+        else if (isMale)
         {
-            Console.WriteLine("{0}", isAdult ? "Mr." : "Master");
+            greeting = isAdult
+                ? "Mr."
+                : "Master";
         }
     }
 }

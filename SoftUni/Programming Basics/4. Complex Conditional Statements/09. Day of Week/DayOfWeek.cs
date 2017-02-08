@@ -3,9 +3,9 @@ class DayOfWeek
 {
     static void Main()
     {
-        int n = int.Parse(Console.ReadLine());
+        int day = int.Parse(Console.ReadLine());
 
-        switch (n)
+        switch (day)
         {
             case 1:
                 Console.WriteLine("Monday");

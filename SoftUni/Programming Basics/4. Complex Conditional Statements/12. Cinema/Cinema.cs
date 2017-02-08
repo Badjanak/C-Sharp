@@ -25,6 +25,8 @@ class Cinema
                 Console.WriteLine("error");
                 break;
         }
-        Console.WriteLine("{0:0.00}", price * rows * cols);
+
+        decimal income = price * rows * cols;
+        Console.WriteLine($"{income:0.00}");
     }
 }

@@ -9,14 +9,10 @@ class AnimalType
         switch (input)
         {
             case "dog":
-                Console.WriteLine("mammal");
+                Console.WriteLine("mamal");
                 break;
             case "crocodile":
-                Console.WriteLine("reptile");
-                break;
-            case "tortoise":
-                Console.WriteLine("reptile");
-                break;
+            case " tortoise":
             case "snake":
                 Console.WriteLine("reptile");
                 break;
