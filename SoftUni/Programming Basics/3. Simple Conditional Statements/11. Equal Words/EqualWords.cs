@@ -7,7 +7,8 @@ class EqualWords
         string firstWord = Console.ReadLine();
         string secondWord = Console.ReadLine();
 
-        if ((firstWord.ToLower()).Equals(secondWord.ToLower()))
+        bool areEqual = firstWord.ToLower().Equals(secondWord.ToLower());
+        if (areEqual)
         {
             Console.WriteLine("yes");
         }

@@ -4,85 +4,87 @@ class MetricConverter
 {
     static void Main()
     {
-        decimal millimeter = 1000m;
-        decimal centimeter = 100m;
-        decimal meter = 1m;
-        decimal kilometer = 0.001m;
-        decimal inch = 39.3700787m;
-        decimal feet = 3.2808399m;
-        decimal yard = 1.0936133m;
-        decimal mile = 0.000621371192m;
+        const double millimeter = 1000;
+        const double centimeter = 100;
+        const double meter = 1;
+        const double kilometer = 0.001;
+        const double inch = 39.3700787;
+        const double feet = 3.2808399;
+        const double yard = 1.0936133;
+        const double mile = 0.000621371192;
 
-        decimal value = decimal.Parse(Console.ReadLine());
+        double value = double.Parse(Console.ReadLine());
         string inputUnits = Console.ReadLine();
         string outputUnits = Console.ReadLine();
 
-        decimal converted = value;
-        // Calculate value to meters
+        double metricUnits = value;
+        // Calculate value in meters
         switch (inputUnits)
         {
-            case "m":
-                converted /= meter;
-                break;
             case "mm":
-                converted /= millimeter;
+                metricUnits /= millimeter;
                 break;
             case "cm":
-                converted /= centimeter;
+                metricUnits /= centimeter;
                 break;
-            case "mi":
-                converted /= mile;
-                break;
-            case "in":
-                converted /= inch;
+            case "m":
+                metricUnits /= meter;
                 break;
             case "km":
-                converted /= kilometer;
+                metricUnits /= kilometer;
+                break;
+
+            case "in":
+                metricUnits /= inch;
                 break;
             case "ft":
-                converted /= feet;
+                metricUnits /= feet;
                 break;
             case "yd":
-                converted /= yard;
+                metricUnits /= yard;
+                break;
+            case "mi":
+                metricUnits /= mile;
                 break;
 
             default:
-                Console.WriteLine("Wrong measurement Units");
+                Console.WriteLine("Unknown measurement units");
                 break;
         }
         // Calculate from meters to given units
         switch (outputUnits)
         {
-            case "m":
-                converted *= meter;
-                break;
             case "mm":
-                converted *= millimeter;
+                metricUnits *= millimeter;
                 break;
             case "cm":
-                converted *= centimeter;
+                metricUnits *= centimeter;
                 break;
-            case "mi":
-                converted *= mile;
-                break;
-            case "in":
-                converted *= inch;
+            case "m":
+                metricUnits *= meter;
                 break;
             case "km":
-                converted *= kilometer;
+                metricUnits *= kilometer;
+                break;
+
+            case "in":
+                metricUnits *= inch;
                 break;
             case "ft":
-                converted *= feet;
+                metricUnits *= feet;
                 break;
             case "yd":
-                converted *= yard;
+                metricUnits *= yard;
+                break;
+            case "mi":
+                metricUnits *= mile;
                 break;
 
             default:
-                Console.WriteLine("Wrong measurement Units");
+                Console.WriteLine("Unknown measurement units");
                 break;
         }
 
-        Console.WriteLine("{0} {1}", converted, outputUnits);
+        Console.WriteLine($"{metricUnits} {outputUnits}");
     }
 }

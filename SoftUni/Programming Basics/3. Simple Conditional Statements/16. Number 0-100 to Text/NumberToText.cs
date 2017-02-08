@@ -6,9 +6,10 @@ class NumberToText
     {
         int number = int.Parse(Console.ReadLine());
 
+        // Check border cases
         if (0 > number || number > 100)
         {
-            Console.WriteLine("invalid number");
+            Console.WriteLine("Nmber out of range [0-100]");
         }
         else if (number == 100)
         {
@@ -18,10 +19,12 @@ class NumberToText
         {
             Console.WriteLine("zero");
         }
+
         else
         {
-            int tens = (number / 10) % 10;
             int ones = number % 10;
+            int tens = (number / 10) % 10;
+
             // From 10 to 20
             if (tens == 1)
             {
@@ -101,7 +104,7 @@ class NumberToText
                     Console.Write(" ");
                 }
             }
-            // Set ones above 20 or under 10
+            // Set ones in cases tens are under 10 or above 19
             if (tens != 1)
             {
                 switch (ones)

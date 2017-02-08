@@ -13,11 +13,12 @@ class AddFifteenMinutes
             minutes %= 60;
             hours++;
         }
+
         if (hours > 23)
         {
             hours %= 24;
         }
 
-        Console.WriteLine("{0}:{1:00}", hours, minutes);
+        Console.WriteLine($"{hours}:{minutes:00}");
     }
 }

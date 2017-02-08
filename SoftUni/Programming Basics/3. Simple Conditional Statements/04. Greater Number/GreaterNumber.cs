@@ -11,7 +11,7 @@ class GreaterNumber
         {
             Console.WriteLine(firstNumber);
         }
-        else
+        else // if (secondNumber > firstNumber)
         {
             Console.WriteLine(secondNumber);
         }

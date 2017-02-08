@@ -4,8 +4,10 @@ class ExcellentOrNot
 {
     static void Main()
     {
-        decimal score = decimal.Parse(Console.ReadLine());
-        if (score >= 5.50m)
+        float score = float.Parse(Console.ReadLine());
+
+        bool isExcellent = score >= 5.50;
+        if (isExcellent)
         {
             Console.WriteLine("Excellent!");
         }

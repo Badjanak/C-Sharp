@@ -4,11 +4,12 @@ class ThreeEqualNumbers
 {
     static void Main()
     {
-        decimal first = decimal.Parse(Console.ReadLine());
-        decimal second = decimal.Parse(Console.ReadLine());
-        decimal third = decimal.Parse(Console.ReadLine());
+        double first = double.Parse(Console.ReadLine());
+        double second = double.Parse(Console.ReadLine());
+        double third = double.Parse(Console.ReadLine());
 
-        if ((first == second) && (second == third))
+        bool areEqual = (first == second) && (second == third);
+        if (areEqual)
         {
             Console.WriteLine("yes");
         }

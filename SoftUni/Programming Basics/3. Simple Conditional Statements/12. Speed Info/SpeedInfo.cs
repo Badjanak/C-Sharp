@@ -4,27 +4,35 @@ class SpeedInfo
 {
     static void Main()
     {
-        decimal speed = decimal.Parse(Console.ReadLine());
+        double speed = double.Parse(Console.ReadLine());
 
+        string speedInfo = "";
         if (speed <= 10)
         {
-            Console.WriteLine("slow");
+            speedInfo = "slow";
         }
         else if (speed > 10 && speed <= 50)
         {
-            Console.WriteLine("average");
+            speedInfo = "average";
         }
         else if (speed > 50 && speed <= 150)
         {
-            Console.WriteLine("fast");
+            speedInfo = "fast";
         }
         else if (speed > 150 && speed <= 1000)
         {
-            Console.WriteLine("ultra fast");
+            speedInfo = "ultra fast";
         }
         else if (speed > 1000)
         {
-            Console.WriteLine("extremely fast");
+            speedInfo = "extremely fast";
         }
+
+        else
+        {
+            speedInfo = "Near light speed, probably? ...";
+        }
+
+        Console.WriteLine(speedInfo);
     }
 }

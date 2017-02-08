@@ -9,9 +9,11 @@ class SumSeconds
         int third = int.Parse(Console.ReadLine());
 
         int times = first + second + third;
-        int minutes = times / 60;
-        int seconds = times % 60;
 
-        Console.WriteLine("{0}:{1:00}", minutes, seconds);
+        int min = 60;
+        int minutes = times / min;
+        int seconds = times % min;
+
+        Console.WriteLine($"{minutes}:{seconds:00}");
     }
 }

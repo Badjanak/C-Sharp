@@ -4,31 +4,32 @@ class BonusScore
 {
     static void Main()
     {
-        decimal number = decimal.Parse(Console.ReadLine());
-        decimal score = 0;
+        double number = double.Parse(Console.ReadLine());
 
+        double score = 0;
+        // Set score in given ranges
         if (number > 1000)
         {
-            score = number * 0.1m;
+            score = number * 0.1;
         }
         else if (number > 100)
         {
-            score = number * 0.2m;
+            score = number * 0.2;
         }
         else if (number <= 100)
         {
             score += 5;
         }
-
+        // Additional bonuses
         if (number % 2 == 0)
         {
-            score++;
+            score += 1;
         }
         if (number % 10 == 5)
         {
             score += 2;
         }
 
-        Console.WriteLine("{0}\n{1}", score, number + score);
+        Console.WriteLine($"{score}\n{number + score}");
     }
 }
