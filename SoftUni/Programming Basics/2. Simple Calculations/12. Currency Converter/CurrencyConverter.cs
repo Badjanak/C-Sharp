@@ -13,20 +13,20 @@ class CurrencyConverter
         string givenCurrency = Console.ReadLine();
         string takenCurrency = Console.ReadLine();
 
-        decimal money = sum;
+        decimal value = sum;
         switch (givenCurrency)
         {
             case "BGN":
-                money *= BGN;
+                value *= BGN;
                 break;
             case "USD":
-                money *= USD;
+                value *= USD;
                 break;
             case "EUR":
-                money *= EUR;
+                value *= EUR;
                 break;
             case "GBP":
-                money *= GBP;
+                value *= GBP;
                 break;
             default:
                 Console.WriteLine("No such currency");
@@ -36,22 +36,22 @@ class CurrencyConverter
         switch (takenCurrency)
         {
             case "BGN":
-                money /= BGN;
+                value /= BGN;
                 break;
             case "USD":
-                money /= USD;
+                value /= USD;
                 break;
             case "EUR":
-                money /= EUR;
+                value /= EUR;
                 break;
             case "GBP":
-                money /= GBP;
+                value /= GBP;
                 break;
             default:
                 Console.WriteLine("No such currency");
                 break;
         }
 
-        Console.WriteLine($"{money:0.##}");
+        Console.WriteLine($"{value:0.##}");
     }
 }
