@@ -11,21 +11,22 @@ class HalfSumElement
         for (int i = 0; i < n; i++)
         {
             int current = int.Parse(Console.ReadLine());
-            sum += current;
             if (current > max)
             {
                 max = current;
             }
+            sum += current;
         }
 
-        int difference = Math.Abs(sum - max);
-        if (difference == max)
+        int sumOfOthers = Math.Abs(sum - max);
+        if (sumOfOthers == max)
         {
-            Console.WriteLine("yes sum {0}", max);
+            Console.WriteLine($"yes sum {max}");
         }
         else
         {
-            Console.WriteLine("no diff {0}", Math.Abs(difference - max));
+            int difference = Math.Abs(sumOfOthers - max);
+            Console.WriteLine($"no diff {difference}");
         }
     }
 }

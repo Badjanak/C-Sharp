@@ -23,11 +23,11 @@ class OddEvenSum
         int difference = Math.Abs(oddSum - evenSum);
         if (difference == 0)
         {
-            Console.WriteLine("yes sum {0}", evenSum);
+            Console.WriteLine($"yes sum {evenSum}");
         }
         else
         {
-            Console.WriteLine("no diff {0}", difference);
+            Console.WriteLine($"no diff {difference}");
         }
     }
 }

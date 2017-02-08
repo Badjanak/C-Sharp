@@ -44,17 +44,15 @@ class OddEvenPosition
 
         if (n == 0)
         {
-            Console.WriteLine("OddSum=0, OddMin=No, OddMax=No, EvenSum=0, EvenMin=No, EvenMax=No");
+            Console.WriteLine($"OddSum={oddSum}, OddMin=No, OddMax=No, EvenSum={evenSum}, EvenMin=No, EvenMax=No");
         }
         else if (n == 1)
         {
-            Console.WriteLine("OddSum={0:0.##}, OddMin={1:0.##}, OddMax={2:0.##}, EvenSum=0, EvenMin=No, EvenMax=No",
-                oddSum, oddMin, oddMax);
+            Console.WriteLine($"OddSum={oddSum:0.##}, OddMin={oddMin:0.##}, OddMax={oddMax:0.##}, EvenSum={evenSum}, EvenMin=No, EvenMax=No");
         }
         else
         {
-            Console.WriteLine("OddSum={0:0.##}, OddMin={1:0.##}, OddMax={2:0.##}, EvenSum={3:0.##}, EvenMin={4:0.##}, EvenMax={5:0.##}",
-                oddSum, oddMin, oddMax, evenSum, evenMin, evenMax);
+            Console.WriteLine($"OddSum={oddSum:0.##}, OddMin={oddMin:0.##}, OddMax={oddMax:0.##}, EvenSum={evenSum:0.##}, EvenMin={evenMin:0.##}, EvenMax={evenMax:0.##}");
         }
     }
 }

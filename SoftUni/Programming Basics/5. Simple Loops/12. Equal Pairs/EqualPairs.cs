@@ -27,11 +27,11 @@ class EqualPairs
 
         if (maxDiff == 0)
         {
-            Console.WriteLine("Yes, value={0}", sum);
+            Console.WriteLine($"Yes, value={sum}");
         }
         else
         {
-            Console.WriteLine("No, maxdiff={0}", maxDiff);
+            Console.WriteLine($"No, maxdiff={maxDiff}");
         }
     }
 }

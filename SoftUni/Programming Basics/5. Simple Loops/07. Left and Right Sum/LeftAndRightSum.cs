@@ -14,7 +14,7 @@ class LeftAndRightSum
             {
                 leftSum += int.Parse(Console.ReadLine());
             }
-            else
+            else // i >= n
             {
                 rightSum += int.Parse(Console.ReadLine());
             }
@@ -23,11 +23,11 @@ class LeftAndRightSum
         int difference = Math.Abs(leftSum - rightSum);
         if (difference == 0)
         {
-            Console.WriteLine("yes sum {0}", rightSum);
+            Console.WriteLine($"yes sum {rightSum}");
         }
         else
         {
-            Console.WriteLine("no diff {0}", difference);
+            Console.WriteLine($"no diff {difference}");
         }
     }
 }
