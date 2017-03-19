@@ -10,6 +10,7 @@ class Histogram
         int p4 = 0;
         int p5 = 0;
         int count = int.Parse(Console.ReadLine());
+        double percentage = 100 / count;
 
         for (int i = 0; i < count; i++)
         {
@@ -35,7 +36,7 @@ class Histogram
                 p5++;
             }
         }
-        Console.WriteLine("{0:0.00}\n{1:0.00}\n{2:0.00}\n{3:0.00}\n{4:0.00}",
-            (double)p1 * 100 / count, (double)p2 * 100 / count, (double)p3 * 100 / count, (double)p4 * 100 / count, (double)p5 * 100 / count);
+        
+        Console.WriteLine($"{p1 * percentage:0.00}\n{p2 * percentage:0.00}\n{p3 * percentage:0.00}\n{p4 * percentage:0.00}\n{p5 * percentage:0.00}");
     }
 }

@@ -25,6 +25,8 @@ class SmartLilly
         }
         double sum = toyCount * toyPrice + money;
 
-        Console.WriteLine("{0} {1:0.00}", sum >= price ? "Yes!" : "No!", Math.Abs(sum - price));
+        Console.WriteLine("{0} {1:0.00}", sum >= price 
+            ? "Yes!" 
+            : "No!", Math.Abs(sum - price));
     }
 }
