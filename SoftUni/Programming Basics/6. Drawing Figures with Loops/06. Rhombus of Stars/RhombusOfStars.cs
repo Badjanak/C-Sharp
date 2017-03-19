@@ -7,33 +7,29 @@ class RhombusOfStars
     {
         int n = int.Parse(Console.ReadLine());
 
-        char star = '*';
         char space = ' ';
-
-        string rhombus = "";
+        
+        // Upper part
         for (int rows = 1; rows <= n; rows++)
         {
-            rhombus += new string(space, n - rows);
-            rhombus += star;
-            for (int i = 0; i < rows - 1; i++)
+            string fill = new string(space, n - rows);
+            string rhombus = "*";
+            for (int i = 0; i < rows-1; i++)
             {
                 rhombus += " *";
             }
-            rhombus += new string(space, n - rows);
-            rhombus += "\r\n";
+            Console.WriteLine($"{fill}{rhombus}{fill}");
         }
-
+        // Lower part
         for (int rows = n - 1; rows >= 1; rows--)
         {
-            rhombus += new string(space, n - rows);
-            rhombus += star;
+            string fill = new string(space, n - rows);
+            string rhombus = "*";
             for (int i = 0; i < rows - 1; i++)
             {
                 rhombus += " *";
             }
-            rhombus += new string(space, n - rows);
-            rhombus += "\r\n";
+            Console.WriteLine($"{fill}{rhombus}{fill}");
         }
-        Console.WriteLine(rhombus);
     }
 }

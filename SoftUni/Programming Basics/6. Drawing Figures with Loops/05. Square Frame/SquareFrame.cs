@@ -9,23 +9,22 @@ class SquareFrame
         char edge = '+';
         char frame = '|';
 
-        string inner = "";
+        string inner = " ";
         for (int i = 0; i < n - 2; i++)
         {
-            inner += " -";
+            inner += "- ";
         }
-        inner += " ";
         // Console.WriteLine(inner);
 
         for (int i = 0; i < n; i++)
         {
             if (i == 0 || i == n - 1)
             {
-                Console.WriteLine("{0}{1}{0}", edge, inner, edge);
+                Console.WriteLine($"{edge}{inner}{edge}");
             }
             else
             {
-                Console.WriteLine("{0}{1}{0}", frame, inner, frame);
+                Console.WriteLine($"{frame}{inner}{frame}");
             }
         }
     }

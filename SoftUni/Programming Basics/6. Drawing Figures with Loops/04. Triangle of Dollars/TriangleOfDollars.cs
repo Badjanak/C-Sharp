@@ -6,19 +6,12 @@ class TriangleOfDollars
     {
         int n = int.Parse(Console.ReadLine());
 
-        for (int rows = 1; rows <= n; rows++)
+        for (int i = 1; i <= n; i++)
         {
-            for (int cols = 1; cols <= rows; cols++)
-            {
-                if (cols == rows)
-                {
-                    Console.WriteLine("$");
-                }
-                else
-                {
-                    Console.Write("$ ");
-                }
-            }
+            string starsCount = new string('$', i);
+            char[] stars = starsCount.ToCharArray();
+            string row = string.Join(" ", stars);
+            Console.WriteLine(row);
         }
     }
 }

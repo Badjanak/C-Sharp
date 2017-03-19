@@ -11,6 +11,7 @@ class Sunglasses
         char space = ' ';
 
         Console.WriteLine(new string(frame, n * 2) + new string(space, n) + new string(frame, n * 2));
+
         for (int i = 0; i < n - 2; i++)
         {
             if (i == (n - 3) / 2)
@@ -23,6 +24,7 @@ class Sunglasses
             }
 
         }
+
         Console.WriteLine(new string(frame, n * 2) + new string(space, n) + new string(frame, n * 2));
     }
 }

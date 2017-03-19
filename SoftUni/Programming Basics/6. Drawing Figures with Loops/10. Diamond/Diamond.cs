@@ -31,7 +31,7 @@ class Diamond
             {
                 diamond.Append(space, outer).Append(wall, 1).Append(space, inner).Append(wall, 1).Append(space, outer).Append("\n");
             }
-            inner -= 4;
+            inner -= 4; // Decrease value and set start fo lower part
             for (int outer = 1; outer < mid; outer++, inner -= 2)
             {
                 diamond.Append(space, outer).Append(wall, 1).Append(space, inner).Append(wall, 1).Append(space, outer).Append("\n");

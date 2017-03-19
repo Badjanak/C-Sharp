@@ -6,19 +6,12 @@ class SquareOfStars
     {
         int n = int.Parse(Console.ReadLine());
 
-        for (int rows = 0; rows < n; rows++)
+        for (int i = 1; i <= n; i++)
         {
-            for (int cols = 0; cols < n; cols++)
-            {
-                if (cols == n - 1)
-                {
-                    Console.WriteLine("*");
-                }
-                else
-                {
-                    Console.Write("* ");
-                }
-            }
+            string starsCount = new string('*', n);
+            char[] stars = starsCount.ToCharArray();
+            string row = string.Join(" ", stars);
+            Console.WriteLine(row);
         }
     }
 }
